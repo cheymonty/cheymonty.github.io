@@ -212,6 +212,7 @@ input, select, textarea {
 		clear: both;
 	}
 
+
 /* Container */
 
 	.container {
@@ -2239,8 +2240,9 @@ input, select, textarea {
 			#main > section.one {
 				/* background-color: #81918E; */
 				/* background-image: url("../../images/banner.jpg"); */
-				/* background-image: url("../../images/Amin.jpg"); */
-				background-color: #fccd04;
+				/* background-image: url("../../images/horizontal.jpg"); */
+				/* background-color: #fccd04; */
+				background-color: #ffb48f;
 			}
 
 			#main > section.two {
