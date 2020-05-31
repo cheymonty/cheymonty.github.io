@@ -1,10 +1,11 @@
 body {
   font-family: 'Lato', arial, sans-serif;
   color: #434343;
-  background: #DAE3E7;
+  background: rgb(139, 209, 255);
   font-size: 16px;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+  /* #DAE3E7 */
 }
 
 h1, h2, h3, h4, h5, h6 {
@@ -116,8 +117,9 @@ a.dotted-link:hover {
 /* ======= Header ======= */
 .header {
   padding: 30px 0;
-  background: #f5f5f5;
+  background: #99f4c5;
   border-top: 10px solid #778492;
+  /* #f5f5f5 */
 }
 
 .header .btn {
@@ -146,7 +148,7 @@ a.dotted-link:hover {
 }
 
 .header .profile-content .social a {
-  background: #b0b7bf;
+  background: rgb(139,209,255);
   width: 36px;
   height: 36px;
   display: inline-block;
