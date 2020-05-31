@@ -1,190 +1,185 @@
-<!DOCTYPE HTML>
-
-<html>
-
+<!DOCTYPE html>
+<html lang="en">
 <head>
-	<title>CMM Portfolio</title>
-	<meta charset="utf-8" />
-	<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
-	<link rel="stylesheet" href="assets/css/main.css" />
-	<link rel="stylesheet" href="assets/css/fontawesome-all.min.css"/>
-	<noscript>
-		<link rel="stylesheet" href="assets/css/noscript.css" /></noscript>
-</head>
+    <title>CMM Portfolio</title>
+    <!-- Meta -->
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">  
+    <link rel="shortcut icon" href="favicon.ico">  
+    
+    <link href='https://fonts.googleapis.com/css?family=Lato:300,400,300italic,400italic' rel='stylesheet' type='text/css'>
+    <link href='https://fonts.googleapis.com/css?family=Montserrat:400,700' rel='stylesheet' type='text/css'> 
+    
+    <!-- FontAwesome JS -->
+    <script defer src="assets/fontawesome/js/all.js"></script>
+    
+    <!-- Global CSS -->
+    <link rel="stylesheet" href="assets/plugins/bootstrap/css/bootstrap.min.css">   
 
-<body class="is-preload">
+    
+    <!-- Theme CSS -->  
+    <link id="theme-style" rel="stylesheet" href="assets/css/styles.css">
+    
+</head> 
 
-	<!-- Wrapper -->
-	<div id="wrapper">
+<body>
+    <!-- ******HEADER****** --> 
+    <header class="header">
+        <div class="container clearfix">                       
+            <img class="profile-image img-fluid float-left rounded-circle" src="assets/images/profile.png" alt="profile image" />
+            <div class="profile-content float-left">
+                <h1 class="name">Cheyenne Montgomery</h1>
+                <h2 class="desc">Sophomore at University of Maryland, College Park</h2>   
+                <ul class="social list-inline">
+                    <li class="list-inline-item"><a href="https:linkedin.com/in/cheyenne-montgomery" target="_blank"><i class="fab fa-linkedin-in"></i></a></li>
+                    <li class="list-inline-item"><a href="https:github.com/cheymonty" target="_blank"><i class="fab fa-github-alt"></i></a></li>    
+                    <li class="list-inline-item"><a href="https://stackoverflow.com/users/10338961/cheyenne?tab=profile" target="_blank"><i class="fab fa-stack-overflow"></i></a></li>                   
+                </ul> 
+            </div><!--//profile-->
+                   
+        </div><!--//container-->
+    </header><!--//header-->
+    
 
-		<!-- Header -->
-		<header id="header" class="alt">
-			<span class="logo"><img src="images/logo.svg" alt="" /></span>
-			<h1>Cheyenne Montgomery</h1>
-			<p>Sophomore Computer Science student at the University of Maryland, College Park</p>
-		</header>
+    
+    <div class="container sections-wrapper">
+        <div class="row">
+            <div class="primary col-lg-8 col-12">
+                <section class="about section">
+                    <div class="section-inner shadow-sm rounded">
+                        <h2 class="heading">About Me</h2>
+                        <div class="content">
+                            <p>
+                                I am a Computer Science student at the University of Maryland, College Park with an intended
+                                graduation date of May 2022. I am currently (Summer 2020) interning with the Core Services Engineering &amp; Operations
+                                team at Microsoft through the Explore program.
+                            </p>
+                            
+                         
+                        </div><!--//content-->
+                    </div><!--//section-inner-->                 
+                </section><!--//section-->
 
-		<!-- Nav -->
-		<nav id="nav">
-			<ul>
-				<li><a href="#intro" class="active">Introduction</a></li>
-				<li><a href="#first">Project Portfolio</a></li>
-				<li><a href="#second">Coursework</a></li>
-				<li><a href="#cta">My Links</a></li>
-			</ul>
-		</nav>
+                <section class="experience section">
+                    <div class="section-inner shadow-sm rounded">
+                        <h2 class="heading">Work Experience</h2>
+                        <div class="content">
+                            <div class="item">
+                                <h3 class="title">Explore Intern: Core Engineering Services &amp; Operations  - <span class="place">Microsoft</span> <span class="year">(May 2020 - Present)</span></h3>
+                                <p>Automate the baseline security scans that are provided monthly by compliance</p>
+                                <p>Elimate manual time required by engineers companywide to check and scan, saving up to 10 hours a month</p>
+                            </div><!--//item-->
+                            <div class="item">
+                                <h3 class="title">Software Product Sprint Participant - <span class="place">Google</span> <span class="year">(February 2020 - May 2020)</span></h3>
+                                <p>Designed and launched an online portfolio using Java and Google App Engine</p>
+                            </div><!--//item-->
+                            
+                            <div class="item">
+                                <h3 class="title">Summer Teaching Ambassador - <span class="place"><a href="https://inclusion.cs.umd.edu/mcwic" target="_blank">Maryland Center for Women in Computing</a></span> <span class="year">(May 2019 - August 2019)</span></h3>
+                                <p>Facilitated a learning environment for elementary through high school students by creating curriculum designed to inspire interest in computer science (Unity, C#, Python, JavaScript, HTML/CSS) </p>
+                                <p>Unity and C# were taught at a level to work through numerous projects with high school students</p>
+                                <p>Received an award for Outstanding Leadership</p>
+                            </div><!--//item-->
+                            
+                        </div><!--//content-->  
+                    </div><!--//section-inner-->                 
+                </section><!--//section-->
+    
+              
+                
+                <section class="projects section">
+                    <div class="section-inner shadow-sm rounded">
+                        <h2 class="heading">Projects</h2>
+                        <div class="content">
+                            <div class="item">
+                                <h3 class="title"><a href="https://github.com/cheymonty/YouPy" target="_blank">YouPy - Python</a></h3>
+                                <p class="summary">A Python application that allows users to download YouTube videos and audio. Features an SQL database that stores the links and titles of videos or audio downloaded and a GUI using Tkinter for better user experience</p>
+                               
+                            </div><!--//item-->
+                            <div class="item">
+                                <h3 class="title">Small C Interpreter</h3>
+                                <p class="summary">A lexer, parser, and interpreter written in OCaml for SmallC - a simplified C language</p>
+                                
+                            </div><!--//item-->
+                            <div class="item">
+                                <h3 class="title">Personal Website</h3>
+                                <p class="summary">Written in HTML/CSS &amp; JavaScript. Deployed using Git and Github Pages</p>
+                               
+                            </div><!--//item-->    
+                        </div><!--//content-->  
+                    </div><!--//section-inner-->                 
+                </section><!--//section-->
+            
+                
+            </div><!--//primary-->
+            <div class="secondary col-lg-4 col-12">
 
-		<!-- Main -->
-		<div id="main">
+                <aside class="education aside section">
+                    <div class="section-inner shadow-sm rounded">
+                        <h2 class="heading">Education</h2>
+                        <div class="content">
+                            <div class="item">                      
+                                <h3 class="title"><i class="fas fa-graduation-cap"></i> University of Maryland, College Park</h3>
+                                <h4 class="university">BS in Computer Science <span class="year">2022</span></h4>
+                            </div><!--//item-->
+                        </div><!--//content-->
+                    </div><!--//section-inner-->
+                </aside><!--//section-->
 
-			<!-- Introduction -->
-			<section id="intro" class="main">
-				<div class="spotlight">
-					<div class="content">
-						<header class="major">
-							<h2>About Me</h2>
-						</header>
-						<p>I am a Computer Science student at the University of Maryland, College Park
-							with an intended graduation date of May 2022. During the summer of 2019, I was a Summer
-							Teaching Ambassador for MCWIC (Maryland Center for Women in Computing) at UMDCP where I
-							ran computing camps for all age groups.</p>
-						<p>I am interested in Software Development, UX & UI, and VR. I have done course
-							projects that implemented Java data structures (Map, Set, LinkedList, Binary Search Tree, Graph, etc...)</p>
+                
+                <aside class="skills aside section">
+                    <div class="section-inner shadow-sm rounded">
+                        <h2 class="heading">Languages</h2>
+                        <div class="content">
+                            <p>Java</p>
+                            <p>Python</p>
+                            <p>Ruby</p>
+                            <p>OCaml</p>
+                            <p>SQL</p>
+                            <p>JavaScript &amp; HTML/CSS</p>
+                                
+                                     
+                        </div><!--//content-->  
+                    </div><!--//section-inner-->                 
+                </aside><!--//section-->
 
-					</div>
-					<span class="image"><img src="images/memoji.png" alt="" /></span>
-				</div>
-			</section>
-
-			<!-- First Section -->
-			<section id="first" class="main special">
-				<header class="major">
-					<h2>Project Portfolio</h2>
-				</header>
-				<ul class="features">
-					<li>
-						<span class="icon solid major style1 fa-gamepad"></span>
-						<h3><a href="https://chey-monty.trinket.io/sites/hangman" target="_blank"><span style="color:#FF6A88">Hangman in the Terminal</span></a> | August 2019</h3>
-						<p>A simple hangman game I created to learn how Python differs from Java <br>
-							<br>Language: Python<br>
-							<br>The most challenging aspect of this project was learning the differences in
-							syntax between the two languages
-						</p>
-					</li>
-					<li>
-
-
-						<span class="icon solid major style3 fa-map-marker-alt"></span>
-						<h3><a href="https://volcanomap.herokuapp.com" target="_blank"><span style="color:#FF6A88">Volcano Map</span></a> | April 2019</h3>
-						<p>A map of all the active volcanos in the world <br>
-							<br>Languages: Javascript | HTML & CSS <br>
-							<br>This project utilizes two Javascript libraries: p5.js and Mappa.js<br>
-							<br>In order to use Mappa.js, I had to implement Node.js
-
-						</p>
-					</li>
-
-
-					<li>
-						<span class="icon solid major style5 fa-cogs"></span>
-						<h3>Coming Soon</h3>
-						<pre><code>boolean comingSoon;
-if (youSeeThis)
-comingSoon = true;
-						</code></pre>
-					</li>
-				</ul>
-				<footer class="major">
-					<!-- <ul class="actions special">
-						<li><a href="generic.html" class="button">Learn More</a></li>
-					</ul> -->
-				</footer>
-			</section>
-
-			<!-- Second Section -->
-			<section id="second" class="main special">
-				<header class="major">
-					<h2>Relevant Courses</h2>
-					<p>
-						<span style="color:#FF6A88; font-weight:800">(Current)</span> Algorithms<br>
-						<span style="color:#FF6A88; font-weight:800">(Current)</span> Organization of Programming Languages<br>
-						User-Centered Design <br>
-						Discrete Stuctures<br>
-						Introduction to Computer Systems<br>
-						Object Oriented Programming II (Java) <br>
-						Calculus II <br>
-						Python Introduction for Java Developers (LinkedIn Learning) <br>
-						Introduction to MATLAB <br>
-						Introduction to Web Development </p>
-				</header>
-				<!-- <ul class="statistics">
-					<li class="style1">
-						<span class="icon solid fa-code-branch"></span>
-						<strong>5,120</strong> Etiam
-					</li>
-					<li class="style2">
-						<span class="icon fa-folder-open"></span>
-						<strong>8,192</strong> Magna
-					</li>
-					<li class="style3">
-						<span class="icon solid fa-signal"></span>
-						<strong>2,048</strong> Tempus
-					</li>
-					<li class="style4">
-						<span class="icon solid fa-laptop"></span>
-						<strong>4,096</strong> Aliquam
-					</li>
-					<li class="style5">
-						<span class="icon fa-gem"></span>
-						<strong>1,024</strong> Nullam
-					</li>
-				</ul> -->
-
-				<footer class="major">
-					<!-- <ul class="actions special">
-						<li><a href="generic.html" class="button">Learn More</a></li>
-					</ul> -->
-				</footer>
-			</section>
-
-			<!-- Get Started -->
-			<section id="cta" class="main special">
-				<header class="major">
-					<h2>My Links</h2>
-					Github: <a href="https://github.com/cheymonty" target="_blank" class="icon brands fa-github alt"><span class="label">GitHub</span></a> <br>
-					LinkedIn: <a href="https://linkedin.com/in/cheyenne-montgomery" target="_blank" class="icon brands fa-linkedin-in alt"><span class="label">LinkedIn</span></a>
-
-				</header>
-				<!-- <footer class="major">
-					<ul class="actions special">
-						<li><a href="generic.html" class="button primary">Get Started</a></li>
-						<li><a href="generic.html" class="button">Learn More</a></li>
-					</ul>
-				</footer> -->
-			</section>
-
-		</div>
-
-		<!-- Footer -->
-		<footer id="footer">
-
-			<p class="copyright">&copy; Cheyenne Montgomery. Design: <a href="https://html5up.net">HTML5 UP</a>.</p>
-		</footer>
-
-	</div>
-
-	<!-- Scripts -->
-	<script src="assets/js/jquery.min.js"></script>
-	<script src="assets/js/jquery.scrollex.min.js"></script>
-	<script src="assets/js/jquery.scrolly.min.js"></script>
-	<script src="assets/js/browser.min.js"></script>
-	<script src="assets/js/breakpoints.min.js"></script>
-	<script src="assets/js/util.js"></script>
-	<script src="assets/js/main.js"></script>
-
+                <aside class="skills aside section">
+                    <div class="section-inner shadow-sm rounded">
+                        <h2 class="heading">Relevant Coursework</h2>
+                        <div class="content">
+                            <p>Algorithms</p>      
+                            <p>Organization of Programming Languages</p>  
+                            <p>User-Centered Design</p>  
+                            <p>Discrete Structures</p>  
+                            <p>Introduction to Computer Systems</p>  
+                            <p>Object Oriented Programming II (Java)</p>           
+                        </div><!--//content-->  
+                    </div><!--//section-inner-->                 
+                </aside><!--//section-->
+            
+         
+            </div><!--//secondary-->    
+        </div><!--//row-->
+    </div><!--//masonry-->
+    
+    <!-- ******FOOTER****** --> 
+    <footer class="footer">
+        <div class="container text-center">
+                <small class="copyright">Designed with <i class="fas fa-heart"></i> by <a href="https://themes.3rdwavemedia.com" target="_blank">Xiaoying Riley</a> for developers</small>
+        </div><!--//container-->
+    </footer><!--//footer-->
+ 
+    <!-- Javascript -->          
+    <script type="text/javascript" src="assets/plugins/jquery-3.4.1.min.js"></script>
+    <script type="text/javascript" src="assets/plugins/popper.min.js"></script> 
+    <script type="text/javascript" src="assets/plugins/bootstrap/js/bootstrap.min.js"></script>    
+    <script type="text/javascript" src="assets/plugins/jquery-rss/dist/jquery.rss.min.js"></script> 
+    
+ 
+  
+    <!-- custom js -->
+    <script type="text/javascript" src="assets/js/main.js"></script>            
 </body>
-
-
-</html>
-</html>
+</html> 
 
