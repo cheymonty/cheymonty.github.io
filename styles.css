@@ -77,7 +77,16 @@ body {
 }
 
 /* mobile view */
-@media (min-width: 768px) {
+@media (max-device-width: 768px) {
+  .flex-container {
+    flex-direction: column;
+  }
+  .header-text {
+    margin-block-start: 0;
+  }
+}
+
+@media (max-width: 768px) {
   .flex-container {
     flex-direction: column;
   }
