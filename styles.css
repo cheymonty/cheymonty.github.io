@@ -77,7 +77,7 @@ body {
 }
 
 /* mobile view */
-@media (max-width: 800px) {
+@media (min-width: 768px) {
   .flex-container {
     flex-direction: column;
   }
