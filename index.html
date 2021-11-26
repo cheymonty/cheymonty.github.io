@@ -1,368 +1,167 @@
 <!DOCTYPE html>
-<html lang="en">
+<html>
   <head>
-    <title>CMM Portfolio</title>
-    <!-- Meta -->
     <meta charset="utf-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="shortcut icon" href="favicon.ico" />
-
-    <link
-      href="https://fonts.googleapis.com/css?family=Lato:300,400,300italic,400italic"
-      rel="stylesheet"
-      type="text/css"
-    />
-    <link
-      href="https://fonts.googleapis.com/css?family=Montserrat:400,700"
-      rel="stylesheet"
-      type="text/css"
-    />
-
-    <!-- FontAwesome JS -->
-    <script defer src="assets/fontawesome/js/all.js"></script>
-
-    <!-- Global CSS -->
-    <link
-      rel="stylesheet"
-      href="assets/plugins/bootstrap/css/bootstrap.min.css"
-    />
-
-    <!-- Theme CSS -->
-    <link id="theme-style" rel="stylesheet" href="assets/css/styles.css" />
+    <title>CMM Portfolio</title>
+    <link rel="stylesheet" href="styles.css" />
+    <link rel="shortcut icon" href="assets/favicon.ico" />
   </head>
-
   <body>
-    <!-- ******HEADER****** -->
-    <header class="header">
-      <div class="container clearfix">
-        <img
-          class="profile-image img-fluid float-left rounded-circle"
-          src="assets/images/profile.jpg"
-          alt="profile image"
-        />
-        <div class="profile-content float-left">
-          <h1 class="name">Cheyenne Montgomery</h1>
-          <h2 class="desc">Senior at University of Maryland, College Park</h2>
-          <ul class="social list-inline">
-            <li class="list-inline-item">
-              <a
-                href="https://linkedin.com/in/cheyenne-montgomery"
-                target="_blank"
-                ><i class="fab fa-linkedin-in"></i
-              ></a>
-            </li>
-            <li class="list-inline-item">
-              <a href="https://github.com/cheymonty" target="_blank"
-                ><i class="fab fa-github-alt"></i
-              ></a>
-            </li>
-            <li class="list-inline-item">
-              <a
-                href="https://stackoverflow.com/users/10338961/cheyenne?tab=profile"
-                target="_blank"
-                ><i class="fab fa-stack-overflow"></i
-              ></a>
-            </li>
-          </ul>
+    <div class="header">
+      <div class="flex-container">
+        <div style="margin: auto">
+          <img src="assets/me.jpeg" class="pfp" />
+          <div style="display: flex; justify-content: space-evenly">
+            <a href="https://github.com/cheymonty" target="_blank"
+              ><img src="assets/github.png" class="icon"
+            /></a>
+            <a
+              href="https://www.linkedin.com/in/cheyenne-montgomery/"
+              target="_blank"
+              ><img src="assets/li.png" class="icon"
+            /></a>
+          </div>
         </div>
-        <!--//profile-->
+        <div style="width: 100%">
+          <h1 class="header-text">Cheyenne Montgomery</h1>
+          <p class="subtitle">
+            Computer Science student at the University of Maryland, College Park
+            with an intended graduation date of May 2022
+          </p>
+        </div>
       </div>
-      <!--//container-->
-    </header>
-    <!--//header-->
-
-    <div class="container sections-wrapper">
-      <div class="row">
-        <div class="primary col-lg-8 col-12">
-          <section class="about section">
-            <div class="section-inner shadow-sm rounded">
-              <h2 class="heading">About Me</h2>
-              <div class="content">
-                <p>
-                  I am a Computer Science student at the University of Maryland,
-                  College Park with an intended graduation date of May 2022.
-                  Currently (Fall 2021) I am the Mobile App Lead for Technica.
-                </p>
-              </div>
-              <!--//content-->
-            </div>
-            <!--//section-inner-->
-          </section>
-          <!--//section-->
-
-          <section class="experience section">
-            <div class="section-inner shadow-sm rounded">
-              <h2 class="heading">Work Experience</h2>
-              <div class="content">
-                <div class="item">
-                  <h3 class="title">
-                    Software Engineering Intern: C + AI -
-                    <span class="place">Microsoft</span>
-                    <span class="year">(June 2021 - Aug 2021)</span>
-                  </h3>
-                  <p>
-                    Redesigned the user interface and experience of an internal
-                    recognition website built with React and C#. I was able to
-                    streamline the nomination process, increasing the amount of
-                    nominations submitted.
-                  </p>
-                </div>
-
-                <div class="item">
-                  <h3 class="title">
-                    Mobile App Lead
-                    <span class="place"
-                      ><a href="https://gotechnica.org/" target="_blank"">Technica - Worlds largest hackathon for underrepresented
-                      genders</span
-                    ></a>
-                    <span class="year">(April 2021 - Present)</span>
-                  </h3>
-                  <p>
-                    Leading the development of the React Native Technica mobile
-                    app, which allows users to view and save events from the
-                    schedule, check in to venues, and connect with mentors for
-                    help via AWS Lambda & Gateway. As the lead, I provide
-                    feedback and guidance to other developers by conducting code
-                    reviews and delegating tickets.
-                  </p>
-                </div>
-
-                <div class="item">
-                  <h3 class="title">
-                    Explore Intern: Core Engineering Services &amp; Operations -
-                    <span class="place">Microsoft</span>
-                    <span class="year">(May 2020 - Aug 2020)</span>
-                  </h3>
-                  <p>
-                    Automated monthly baseline compliance security scans using
-                    Python, PowerShell, and various Azure services. I eliminated
-                   manual time required by engineers companywide to
-                    check and scan, saving up to 10 hours a month.
-                  </p>
-                </div>
-
-                <div class="item">
-                  <h3 class="title">
-                    Summer Teaching Ambassador -
-                    <span class="place"
-                      ><a
-                        href="https://inclusion.cs.umd.edu/mcwic"
-                        target="_blank"
-                        >Maryland Center for Women in Computing</a
-                      ></span
-                    >
-                    <span class="year">(May 2019 - Aug 2019)</span>
-                  </h3>
-                  <p>
-                    Facilitated a learning environment for elementary through
-                    high school students by creating curriculum designed to
-                    inspire interest in computer science (Unity, C#, Python,
-                    JavaScript, HTML/CSS)
-                  </p>
-                  <p>
-                    Unity and C# were taught at a level to work through numerous
-                    projects with high school students
-                  </p>
-                  <p>Received an award for Outstanding Leadership</p>
-                </div>
-              </div>
-              <!--//content-->
-            </div>
-            <!--//section-inner-->
-          </section>
-          <!--//section-->
-
-          <section class="projects section">
-            <div class="section-inner shadow-sm rounded">
-              <h2 class="heading">Projects</h2>
-              <div class="content">
-                <div class="item">
-                  <h3 class="title">
-                    <a
-                      href="https://github.com/cheymonty/subscribi-app"
-                      target="_blank"
-                      >Subscribi App - React Native</a
-                    >
-                  </h3>
-                  <p class="summary">
-                    iOS and Android app that holds deadline information for all
-                    your subscriptions, in case you've ever forgot and had to
-                    pay for another cycle! Features notifications, a chart
-                    showing your subscription spendings, and easy to use UI
-                  </p>
-                </div>
-
-                <div class="item">
-                  <h3 class="title">
-                    <a
-                      href="https://github.com/cheymonty/cal-to-tasks"
-                      target="_blank"
-                      >Cal-to-Tasks - Python</a
-                    >
-                  </h3>
-                  <p class="summary">
-                    A simple python script that turns your Google Calender
-                    Events into Google Task items. Uses Google Auth and Google
-                    Calendar/Task API's
-                  </p>
-                </div>
-
-                <div class="item">
-                  <h3 class="title">
-                    <a
-                      href="https://github.com/Ophir-Gal/artapp"
-                      target="_blank"
-                      >ArtApp - Kotlin</a
-                    >
-                  </h3>
-                  <p class="summary">
-                    An Android art application written in Kotlin that allows
-                    users to participate in real time drawing in a public or
-                    private room. For the backend, the app uses Firebase to
-                    handle keeping all user’s screens up to date. Developed in a
-                    group of 3 as part of the semester long project for
-                    Programming Handheld Systems.
-                  </p>
-                </div>
-
-                <div class="item">
-                  <h3 class="title">
-                    <a href="https://github.com/cheymonty/YouPy" target="_blank"
-                      >YouPy - Python</a
-                    >
-                  </h3>
-                  <p class="summary">
-                    A Python application that allows users to download YouTube
-                    videos and audio. Features an SQL database that stores the
-                    links and titles of videos or audio downloaded and a GUI
-                    using Tkinter for better user experience
-                  </p>
-                </div>
-
-                <div class="item">
-                  <h3 class="title">
-                    Google: Software Product Sprint Participant
-                  </h3>
-                  <p class="summary">
-                    Designed and launched an online portfolio using Java and
-                    Google App Engine
-                  </p>
-                </div>
-                <div class="item">
-                  <h3 class="title">Small C Interpreter - OCaml</h3>
-                  <p class="summary">
-                    A lexer, parser, and interpreter written in OCaml for SmallC
-                    - a simplified C language
-                  </p>
-                </div>
-                <!--//item-->
-              </div>
-              <!--//content-->
-            </div>
-            <!--//section-inner-->
-          </section>
-          <!--//section-->
-        </div>
-        <!--//primary-->
-        <div class="secondary col-lg-4 col-12">
-          <aside class="education aside section">
-            <div class="section-inner shadow-sm rounded">
-              <h2 class="heading">Education</h2>
-              <div class="content">
-                <div class="item">
-                  <h3 class="title">
-                    <i class="fas fa-graduation-cap"></i> University of
-                    Maryland, College Park
-                  </h3>
-                  <h4 class="university">
-                    BS in Computer Science <span class="year">2022</span>
-                  </h4>
-                </div>
-                <!--//item-->
-              </div>
-              <!--//content-->
-            </div>
-            <!--//section-inner-->
-          </aside>
-          <!--//section-->
-
-          <aside class="skills aside section">
-            <div class="section-inner shadow-sm rounded">
-              <h2 class="heading">Languages/Technologies</h2>
-              <div class="content">
-                <div style="overflow: hidden">
-                  <p style="float: left">Java</p>
-                  <p style="float: right">Python</p>
-                </div>
-
-                <div style="overflow: hidden">
-                  <p style="float: left">Azure Services</p>
-                  <p style="float: right">Git</p>
-                </div>
-
-                <div style="overflow: hidden">
-                  <p style="float: left">React Native</p>
-                  <p style="float: right">TypeScript</p>
-                </div>
-              </div>
-              <!--//content-->
-            </div>
-            <!--//section-inner-->
-          </aside>
-          <!--//section-->
-
-          <aside class="skills aside section">
-            <div class="section-inner shadow-sm rounded">
-              <h2 class="heading">Relevant Coursework</h2>
-              <div class="content">
-                <p><b>Software Engineering - Fall 2021</b></p>
-                <p><b>Introduction to Data Science - Fall 2021</b></p>
-                <p>Advanced Data Structures</p>
-                <p>Cryptography</p>
-                <p>Programming Handheld Systems (Android Dev)</p>
-                <p>Introduction to PHP and Javascript</p>
-                <p>Algorithms</p>
-                <p>Organization of Programming Languages</p>
-                <p>User-Centered Design</p>
-                <p>Discrete Structures</p>
-                <p>Object Oriented Programming II (Java)</p>
-              </div>
-              <!--//content-->
-            </div>
-            <!--//section-inner-->
-          </aside>
-          <!--//section-->
-        </div>
-        <!--//secondary-->
-      </div>
-      <!--//row-->
     </div>
-    <!--//masonry-->
 
-    <!-- ******FOOTER****** -->
-    <footer class="footer">
-      <div class="container text-center"></div>
-      <!--//container-->
-    </footer>
-    <!--//footer-->
+    <div class="content">
+      <div class="flex-container">
+        <div>
+          <h1 class="section-header-text">Education</h1>
+          <div class="card">
+            <p>
+              <span class="bold">Degree (May 2022):</span> Bachelor of Science,
+              Computer Science @ University of Maryland, College Park
+            </p>
+            <p>
+              <span class="bold">Relevant Coursework:</span> Intro to Data
+              Science; Software Engineering; Advanced Data Structures;
+              Algorithms
+            </p>
+          </div>
+        </div>
+        <div>
+          <h1 class="section-header-text">Technical Skills</h1>
+          <div class="card">
+            <p><span class="bold">Languages:</span> Java, TypeScript, Python</p>
+            <p>
+              <span class="bold">Technologies:</span> React Native, React, AWS,
+              Git, Azure Services
+            </p>
+          </div>
+        </div>
+      </div>
 
-    <!-- Javascript -->
-    <script
-      type="text/javascript"
-      src="assets/plugins/jquery-3.4.1.min.js"
-    ></script>
-    <script type="text/javascript" src="assets/plugins/popper.min.js"></script>
-    <script
-      type="text/javascript"
-      src="assets/plugins/bootstrap/js/bootstrap.min.js"
-    ></script>
-    <script
-      type="text/javascript"
-      src="assets/plugins/jquery-rss/dist/jquery.rss.min.js"
-    ></script>
+      <h1 class="section-header-text">Work Experience</h1>
+      <div class="flex-container">
+        <div class="card">
+          <h3>Software Engineering Intern @ Microsoft</h3>
+          <h4 class="team">Team: C + AI</h4>
+          <h4 class="date">Jun 2021 - Aug 2021</h4>
+          <p>
+            Redesigned the user interface and experience of an internal
+            recognition website built with React and C#. I was able to
+            streamline the nomination process, increasing the amount of
+            nominations submitted.
+          </p>
+        </div>
+        <div class="card">
+          <h3>Explore Intern @ Microsoft</h3>
+          <h4 class="team">Team: Core Engineering Services &amp; Operations</h4>
+          <h4 class="date">May 2020 - Aug 2020</h4>
+          <p>
+            Automated monthly baseline compliance security scans using Python,
+            PowerShell, and various Azure services. I eliminated manual time
+            required by engineers companywide to check and scan, saving up to 10
+            hours a month.
+          </p>
+        </div>
+        <div class="card">
+          <h3>
+            Summer Teaching Ambassador @
+            <a href="https://inclusion.cs.umd.edu/mcwic" target="_blank"
+              >Maryland Center for Women in Computing</a
+            >
+          </h3>
+          <h4>May 2019 - Aug 2019</h4>
+          <p>
+            Created curriculum designed to inspire interest in computer science
+            using Unity, C#, Python, & JavaScript. During my employment, I
+            earned an Outstanding Leadership award.
+          </p>
+        </div>
+      </div>
 
-    <!-- custom js -->
-    <script type="text/javascript" src="assets/js/main.js"></script>
+      <h1 class="section-header-text">Select Projects & Leadership</h1>
+      <div class="flex-container">
+        <div class="card">
+          <h3>
+            <a
+              href="https://cheymonty.github.io/lidar-advertising/"
+              target="_blank"
+              >LiDAR Visualization Tool</a
+            >: <span class="tech">Python, Open3D</span>
+          </h3>
+          <h4>Oct 2021 – Present</h4>
+          <p>Team Member</p>
+          <p>
+            Developing a tool for autonomous vehicle researchers to visualize
+            data from many different formats, including
+            <a
+              href="https://waymo.com/intl/en_us/dataset-motion/"
+              target="_blank"
+              >Waymo</a
+            >
+            and
+            <a href="https://www.nuscenes.org/nuscenes#overview" target="_blank"
+              >nuScenes</a
+            >, by converting to a generic format. The tool displays RGB images,
+            point clouds, and bounding boxes for all frames in the dataset.
+          </p>
+        </div>
+
+        <div class="card">
+          <h3>
+            <a href="https://gotechnica.org" target="_blank">Technica</a>:
+            <span class="tech">React Native, TypeScript, AWS</span>
+          </h3>
+          <h4>May 2021 – Nov 2021</h4>
+          <p>Mobile App Lead</p>
+          <p>
+            Led the development of the Technica mobile app, which allows users
+            to view and save events from the schedule, check in to venues, and
+            connect with mentors for help. The frontend uses React Native and
+            TypeScript, while the backend uses AWS DynamoDB, Lambda, and
+            Gateway. As the lead, I provided feedback and guidance to other
+            developers by conducting code reviews and delegating tickets. The
+            app was released in both the App Store and Google Play Store.
+          </p>
+        </div>
+
+        <div class="card">
+          <h3>
+            <a href="https://github.com/cheymonty/cal-to-tasks" target="_blank">
+              Cal-to-Tasks</a
+            >:
+            <span class="tech">Python</span>
+          </h3>
+          <h4>Jan 2021</h4>
+          <p>Developer</p>
+          <p>
+            Developed a python script that turns Google Calendar Events into
+            Google Task items. Utilizes Google Auth, Google Calendar, and Google
+            Tasks APIs.
+          </p>
+        </div>
+      </div>
+    </div>
   </body>
 </html>
